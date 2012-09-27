@@ -1,0 +1,10 @@
+/* CSS Document */
+* html #outer{	height:100%;}
+#minHeight {display:none}
+#left {margin-right:-3px;}/*3px jog */
+#right {margin-left:-3px;}/*3px jog */
+* html #footer {
+	height:52px;/* for ie5 */
+	he\ight:50px;/* for ie6 */
+}
+#centrecontent {margin:0}

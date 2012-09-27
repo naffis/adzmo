@@ -1,0 +1,4 @@
+<% require 'pp' -%>
+A <%= @exception.class %> occurred.
+<%= @exception.message %> <%= @backtrace.first %>
+<% @backtrace.join "\n  " %>

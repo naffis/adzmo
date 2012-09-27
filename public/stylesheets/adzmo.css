@@ -1,0 +1,157 @@
+/* CSS Document */
+* {margin:0;padding:0}
+p{margin-bottom:1em}
+ul{margin-left:16px;margin-bottom:1em}
+/* commented backslash hack v2 \*/ 
+html, body{height:100%;} 
+/* end hack */ 
+
+body {
+	background-color: #e1ddd9;
+	color:#564b47;
+}
+
+
+#outer{
+	margin-left:190px;
+	margin-right:190px;
+	background:#ffffff;
+	border-left:2px solid #000;
+	border-right:2px solid #000;
+	margin-bottom:-25px;
+	color: #000000;
+}
+ 
+#header{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:30px;
+	background:#e1ddd9;
+	text-align:center;		
+	/*border-top:1px solid #000;*/
+	/*border-bottom:2px solid #000;*/
+	overflow:hidden;
+	color: #000000;
+	padding-top: 3px;
+	font-weight:bold;
+	color: #564b47;
+	font-size: 18px;	
+}
+#header a {	
+	color: #564b47;
+	background-color:transparent;
+	text-decoration: none;	
+}
+
+#navbar{
+	position:absolute;
+	top:30px;
+	left:0;
+	width:100%;
+	height:25px;
+	background:#564b47;
+	text-align:center;	
+	/*border-top:1px solid #000;*/
+	/*border-bottom:2px solid #000;*/
+	overflow:hidden;
+	padding-top: 2px;
+	color: #000000;
+	font-size: 14px;	
+	font-weight:bold;
+	font-family: Verdana, Arial, SunSans-Regular, Sans-Serif;	
+}
+
+#navbar a {
+	color: #ff66cc;	
+	background-color:transparent;
+	text-decoration: none;
+	
+}
+
+#left {
+	position:relative;/*ie needs this to show float */
+	width:190px;
+	float:left;
+	margin-left:-189px;/*must be 1px less than width otherwise won't push footer down */
+	z-index:100;
+	left:-1px;
+}
+
+
+#right {
+	position:relative;/*ie needs this to show float */
+	width:190px;
+	float:right;
+	margin-right:-189px;/*must be 1px less than width otherwise won't push footer down */
+	left:1px
+}
+
+#left p, 
+#right p,
+#centrecontent p {padding:5px}
+
+#footer {
+	width:100%;
+	clear:both;
+	height:25px;
+	/*border-top:1px solid #000;*/
+	/*border-bottom:1px solid #000;*/
+	background-color: #564b47;	
+	position:relative;
+	padding-top: 2px;
+	text-align:center;	
+	color: #ff66cc;
+	font-size: 12px;	
+	font-weight:bold;
+	font-family: Verdana, Arial, SunSans-Regular, Sans-Serif;
+}
+#footer a {	
+	color: #ff66cc;	
+}
+#clearheader{height:30px;}/*needed to make room for header*/
+#clearnavbar{height:25px;}/*needed to make room for header*/
+#clearfooter{clear:both;height:25px;}/*needed to make room for footer*/
+* > html #clearfooter {float:left;width:100%;}/* ie mac styles */
+#centrecontent {
+	width:100%;
+	float:left;
+	position:relative;
+	z-index:1;
+	margin:0 -1px;/* moz fix*/
+}
+
+#adbox {
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+html>body #minHeight{float:right;width:0px;height:100%;margin-bottom:-25px;} /*safari wrapper */
+
+table.listtable {
+	border: 2px solid #564b47;
+	background:#e1ddd9;
+}
+tr.listtitle {
+	background: #564b47; 
+	color: #ff66cc;
+	font-weight:bold;
+}
+tr.listtitle a {
+	color: #ffffff;
+}
+
+tr.listheader {
+	background: #e1ddd9;
+	font-size: 10px;
+	font-family: Verdana, Arial, SunSans-Regular, Sans-Serif;
+}
+tr.listbody {
+	background: #ffffff;
+}
+td.listbody {
+	font-size: 10px;
+	font-family: Verdana, Arial, SunSans-Regular, Sans-Serif;
+}
+

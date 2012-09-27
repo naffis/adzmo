@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>
+			Adzmo
+		</title>		
+		
+		<%= stylesheet_link_tag 'adzmo' %>
+		<!--[if IE]>
+			<link href="/stylesheets/3col-ie.css" rel="stylesheet" type="text/css" />
+		<![endif]-->		
+
+	</head>
+
+<body>
+	<div id="minHeight"></div>
+	<div id="outer">
+		<div id="clearheader"></div>
+		<div id="clearnavbar"></div>
+
+	<div id="left">
+		<p align="center">
+			
+		</p>
+	</div>
+	<div id="centrecontent">
+		<%= yield %>
+	</div>
+	<div id="right">
+		<div id="adbox">
+			
+	  	</div>
+	</div>
+	<div id="clearfooter"></div>
+	<!-- to clear footer -->
+</div>
+<!-- end outer div -->
+		
+	<div id="footer">
+		<a href="http://www.adzmo.com">Adzmo.com<a> &copy; 2006&nbsp;
+		-&nbsp;<a href="mailto:admin@adzmo.com?subject=ADZMO Comment">Problems or Comments?</a>
+		-&nbsp;<a href="http://www.naffis.com/blog/articles/2006/08/15/adzmo-com-location-based-shopping-tool">News/Discuss</a>		
+	</div>	
+	<div id="header">
+		<a href="http://www.naffis.com/msmaps/">Adzmo</a>
+	</div>
+	<div id="navbar">
+		<%= link_to("Home", :controller => "public", :action => "index") %>
+		| 
+		<%= link_to("How To Use It", :controller => "public", :action => "how") %>		
+	</div>	
+</body>
+</html>
